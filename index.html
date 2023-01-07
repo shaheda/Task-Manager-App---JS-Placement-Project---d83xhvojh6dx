@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Task Manager</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Task Manager</h1>
+    </div>
 
+        <div class="input">
+          <input type="text" id="task" name="task" placeholder="Enter Your Task" /> 
+          <button type="submit" class="Btntask" id="addBtn">
+            Add Task
+          </button>
+        </div>
+      
+      <div class="inner-boxes" id="body">
+        <section class="section-1 sections">
+          <div class="open section-box">
+            <h2 class="title">OPEN</h2>
+            <div id="addTask" class="bar"></div>
+          </div>
+        </section>
+        <section class="section-2 sections">
+          <div class="in-progress section-box">
+            <h2 class="title">IN PROGRESS</h2>
+            <div id="taskInProgress" class="bar"></div>
+          </div>
+        </section>
+        <section class="section-3 sections">
+          <div class="in-review section-box">
+            <h2 class="title">IN REVIEW</h2>
+            <div id="taskInReview" class="bar"></div>
+          </div>
+        </section>
+        <section class="section-4 sections">
+          <div class="done section-box">
+            <h2 class="title">DONE</h2>
+            <div id="taskDone" class="bar"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+    
+    <script src="./App.js"></script>
+  </body>
+</html>
